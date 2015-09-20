@@ -1,0 +1,149 @@
+Test Cases
+
+
+1. Identifier: Input N
+   1. Preconditions: User is at any iteration
+   2. Input values: [N]
+   3. Execution Steps: 
+      1. Enter N
+   1. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
+2. Identifier: Input S
+   1. Preconditions: User is at any iteration
+   2. Input values: [S]
+   3. Execution Steps:
+      1. Enter S
+   1. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
+3. Identifier: Input L
+   1. Preconditions: User is at any iteration
+   2. Input values: [L]
+   3. Execution Steps:
+      1. Enter L
+   1. Post conditions: System looks for an item
+4. Identifier: Input I
+   1. Preconditions: User is at any iteration
+   2. Input values: [I]
+   3. Execution Steps:
+      1. Enter I
+   1. Post conditions: User’s inventory is shown
+5. Identifier: Input D
+   1. Preconditions: User is at any iteration
+   2. Input values: [D]
+   3. Execution Steps:
+      1. Enter D
+   1. Post conditions: User drinks
+6. Identifier: Input H
+   1. Preconditions: User is at any iteration
+   2. Input values: [H]
+   3. Execution Steps:
+      1. Enter H
+   1. Post conditions: Help menu is shown.
+7. Identifier: Unknown Command
+   1. Preconditions: User is at any iteration
+   2. Input values: [Any symbol outside of the six given letters]
+   3. Execution Steps:
+      1. Enter ?
+   1. Output values: “What?”
+8. Identifier: Case N
+   1. Preconditions: User is at any iteration stage of the game. 
+   2. Input values: [n, N]
+   3. Execution Steps:
+      1. Enter n
+      2. Enter N
+   1. Post conditions: Output of both inputs should be the same
+9. Identifier: Case S
+   1. Preconditions: User is at any interation
+   2. Input values: [s, S]
+   3. Execution Steps:
+      1. Enter s
+      2. Enter S
+   1. Post conditions: Output of both inputs should be the same
+10. Identifier: Case L
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+11. Identifier: Case D
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+12. Identifier: Case I
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+13. Identifier: Case H
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+14. Identifier: Move Exists
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+15. Identifier: Move Doesn’t Exist
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+16. Identifier: Win
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+17. Identifier: Lose
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+18. Identifier: Inventory No Items
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+19. Identifier: Inventory Some Items
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+20. Identifier: Inventory All Items
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+21. Identifier: Look No Item
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+22. Identifier: Look Item
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+23. Identifier: Unique Room
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
+24. Identifier: Unique Furnishing
+   1. Preconditions:
+   2. Input values:
+   3. Execution Steps:
+   4. Output values:
+   5. Post conditions:
