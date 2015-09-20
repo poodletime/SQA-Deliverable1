@@ -1,0 +1,29 @@
+Defect Report
+
+
+1. Case Insensitivity:
+   1. Description: System does not treat upper and lower case "n" equivalently. 
+   2. Summary: At each iteration, input of a lowercase "n" results in the output "what?" followed by a repeat of that iteration. Input of the uppercase version of that letter results in expected game output. 
+   3. Reproduction Steps:
+      1. Input "n"
+      2. Observe that the system responds with "what?" and repeats the preceding iteration. 
+      3. Input "N"
+      4. Observe that the system outputs a new iteration. 
+   1. Expected Behavior: System output with lowercase "n" as input is identical to output if input is uppercase version of letter.
+   2. Observed Behavior: System has different output for upper and lowercase versions of "n"
+2. Unavailable Rooms
+   1. Description: User can enter rooms that are unavailable.
+   2. Summary: At an iteration, if the user inputs a direction that according to the iteration description does not exist, the user moves to “a magical land,” then back to the beginning.
+   3. Reproduction Steps:
+      1. The system says “A Magenta door leads North.” Input “S.”
+      2. Observe that the system responds with “You are in a magical land!  But you are returned to the beginning!”
+   1. Expected Behavior: The system says “A Magenta door leads North.” Input “S.” The user does not move.
+   2. Observed Behavior: The system says “A Magenta door leads North.” Input “S.” The user moves to “a magical land,” then to the beginning.
+3. Help Menu
+   1. Description: Help menu does not exist.
+   2. Summary: When the user enters “H” or “h,” the system outputs “What?”
+   3. Reproduction Steps:
+      1. At any iteration, input “H” or “h.”
+      2. Observe that the system outputs “What?”
+   1. Expected Behavior: The user inputs “H.” The System displays a listing of possible commands and their effects.
+   2. Observed Behavior: The user inputs “H.” The System outputs “What?”
