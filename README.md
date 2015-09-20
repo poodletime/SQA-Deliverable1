@@ -1,2 +1,2 @@
 # SQA-Deliverables
-A repository for Deliverables HW
+A repository for Deliverable1 HW
