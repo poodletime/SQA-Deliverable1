@@ -58,29 +58,33 @@ Test Cases
       2. Enter S
    1. Post conditions: Output of both inputs should be the same
 10. Identifier: Case L
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User is at any interation
+   2. Input values: [l, L]
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter l
+      2. Enter L
+   1. Post conditions: Output of both inputs should be the same
 11. Identifier: Case D
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User is at any interation
+   2. Input values: [d, D]
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter d
+      2. Enter D
+   1. Post conditions: Output of both inputs should be the same
 12. Identifier: Case I
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User is at any interation
+   2. Input values: [i, I]
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter i
+      2. Enter I
+   1. Post conditions: Output of both inputs should be the same
 13. Identifier: Case H
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User is at any interation
+   2. Input values: [h, H]
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter H
+      2. Enter h
+   1. Post conditions: Output of both inputs should be the same
 14. Identifier: Move Exists
    1. Preconditions:
    2. Input values:
