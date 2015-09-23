@@ -141,3 +141,8 @@ Test Cases
       3. Enter a room
       4. If room is unexplored, go to 1. Otherwise, find an unexplored room
    3. Post conditions: Each room shall have one and only one piece of furniture
+26. Identifier: Help Menu
+   1. Precondition: User is at any iteration
+   2. Execution Steps: 
+      1. Enter H
+   3. Post conditions: Help menu describing the possible inputs and their usage is shown
