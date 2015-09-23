@@ -6,148 +6,159 @@ Test Cases
    2. Input values: [N]
    3. Execution Steps: 
       1. Enter N
-   1. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
+   4. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
 2. Identifier: Input S
    1. Preconditions: User is at any iteration
    2. Input values: [S]
    3. Execution Steps:
       1. Enter S
-   1. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
+   4. Post conditions: If door exists, user is taken to next iteration. If door doesn’t exist, user does not move.
 3. Identifier: Input L
    1. Preconditions: User is at any iteration
    2. Input values: [L]
    3. Execution Steps:
       1. Enter L
-   1. Post conditions: System looks for an item
+   4. Post conditions: System looks for an item
 4. Identifier: Input I
    1. Preconditions: User is at any iteration
    2. Input values: [I]
    3. Execution Steps:
       1. Enter I
-   1. Post conditions: User’s inventory is shown
+   4. Post conditions: User’s inventory is shown
 5. Identifier: Input D
    1. Preconditions: User is at any iteration
    2. Input values: [D]
    3. Execution Steps:
       1. Enter D
-   1. Post conditions: User drinks
+   4. Post conditions: User drinks
 6. Identifier: Input H
    1. Preconditions: User is at any iteration
    2. Input values: [H]
    3. Execution Steps:
       1. Enter H
-   1. Post conditions: Help menu is shown.
+   4. Post conditions: Help menu is shown.
 7. Identifier: Unknown Command
    1. Preconditions: User is at any iteration
    2. Input values: [Any symbol outside of the six given letters]
    3. Execution Steps:
       1. Enter ?
-   1. Output values: “What?”
+   4. Output values: “What?”
 8. Identifier: Case N
    1. Preconditions: User is at any iteration stage of the game. 
    2. Input values: [n, N]
    3. Execution Steps:
       1. Enter n
       2. Enter N
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 9. Identifier: Case S
    1. Preconditions: User is at any interation
    2. Input values: [s, S]
    3. Execution Steps:
       1. Enter s
       2. Enter S
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 10. Identifier: Case L
    1. Preconditions: User is at any interation
    2. Input values: [l, L]
    3. Execution Steps:
       1. Enter l
       2. Enter L
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 11. Identifier: Case D
    1. Preconditions: User is at any interation
    2. Input values: [d, D]
    3. Execution Steps:
       1. Enter d
       2. Enter D
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 12. Identifier: Case I
    1. Preconditions: User is at any interation
    2. Input values: [i, I]
    3. Execution Steps:
       1. Enter i
       2. Enter I
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 13. Identifier: Case H
    1. Preconditions: User is at any interation
    2. Input values: [h, H]
    3. Execution Steps:
       1. Enter H
       2. Enter h
-   1. Post conditions: Output of both inputs should be the same
+   4. Post conditions: Output of both inputs should be the same
 14. Identifier: Move Exists
-   1. Preconditions:
+   1. Preconditions: User is in a room with a door on the north side
    2. Input values:
-   3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+   3. Execution Steps: 
+      1. Enter N
+   5. Post conditions: User enters new room to the north.
 15. Identifier: Move Doesn’t Exist
-   1. Preconditions:
+   1. Preconditions: User is in a room without a door on the north side
    2. Input values:
-   3. Execution Steps:
+   3. Execution Steps: 
+      1. Enter N
    4. Output values:
-   5. Post conditions:
+   5. Post conditions: User does not move
 16. Identifier: Win
-   1. Preconditions:
-   2. Input values:
-   3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+   1. Preconditions: User has obtained all items (sugar, cream, and coffee). 
+   2. Input values: 
+   3. Execution Steps: 
+      1. Enter D
+   4. Post conditions: User receives message that they have won.
 17. Identifier: Lose
-   1. Preconditions:
+   1. Preconditions: User has NOT obtained all items (sugar, cream, and coffee).
    2. Input values:
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter D
+   4. Post conditions: User receives message that they have lost.
 18. Identifier: Inventory No Items
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User has not obtained any items
+   2. Input values: 
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter I
+   4. Post conditions: User receives message that no items are in their inventory.
 19. Identifier: Inventory Some Items
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User has obtained some but not all items
+   2. Input values: 
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter I
+   4. Post conditions: User receives message listing the items they have obtained.
 20. Identifier: Inventory All Items
-   1. Preconditions:
-   2. Input values:
+   1. Preconditions: User has obtained all items
+   2. Input values: 
    3. Execution Steps:
-   4. Output values:
-   5. Post conditions:
+      1. Enter I
+   4. Post conditions: User receives message listing all the items they have obtained, plus a message that they have all          items. 
 21. Identifier: Look No Item
-   1. Preconditions:
+   1. Preconditions: User is in a room with no items
    2. Input values:
-   3. Execution Steps:
+   3. Execution Steps: 
+      1. Enter L
    4. Output values:
-   5. Post conditions:
+   5. Post conditions: User does not receive a message that they found an item, and no new items will be in the inventory
 22. Identifier: Look Item
-   1. Preconditions:
+   1. Preconditions: User is in a room with an item
    2. Input values:
    3. Execution Steps:
+      1. Enter L
    4. Output values:
-   5. Post conditions:
+   5. Post conditions: User receives a message that they found an item and that item will be in their inventory
 23. Identifier: Unique Room
-   1. Preconditions:
+   1. Preconditions: User has just entered the game
    2. Input values:
-   3. Execution Steps:
+   3. Execution Steps: 
+      1. On entering a room, including the first, enter L
+      2. Record the adjective describing the room
+      3. Enter a room
+      4. If room is unexplored, go to 1. Otherwise, find an unexplored room
    4. Output values:
-   5. Post conditions:
+   5. Post conditions: Each room's adjective will be unique
 24. Identifier: Unique Furnishing
-   1. Preconditions:
+   1. Preconditions: User has just entered the game
    2. Input values:
    3. Execution Steps:
+      1. On entering a room, including the first, enter L
+      2. Record the furniture within the room
+      3. Enter a room
+      4. If room is unexplored, go to 1. Otherwise, find an unexplored room
    4. Output values:
-   5. Post conditions:
+   5. Post conditions: Each room's furniture will be unique
