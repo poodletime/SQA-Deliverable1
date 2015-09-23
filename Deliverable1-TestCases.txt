@@ -133,3 +133,11 @@ Test Cases
       3. Enter a room
       4. If room is unexplored, go to 1. Otherwise, find an unexplored room
    3. Post conditions: Each room's furniture will be unique
+25. Identifier: Single Furnishing
+   1. Preconditions: User has just entered the game
+   2. Execution Steps: 
+      1. On entering a room, including the first, enter L
+      2. Observe whether more than one piece of furniture is described
+      3. Enter a room
+      4. If room is unexplored, go to 1. Otherwise, find an unexplored room
+   3. Post conditions: Each room shall have one and only one piece of furniture
